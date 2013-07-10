@@ -1,0 +1,307 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Graphix Web2Button Demo'
+  ClientHeight = 438
+  ClientWidth = 597
+  Quality = ccHighQuality
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Rectangle1: TRectangle
+    Align = alContents
+    Fill.Kind = bkNone
+    Height = 438.000000000000000000
+    Stroke.Kind = bkNone
+    Width = 597.000000000000000000
+  end
+  object Web2Button4: TWeb2Button
+    CanFocus = False
+    Height = 33.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 80.000000000000000000
+    Text = 'Apple'
+    Width = 121.000000000000000000
+    TabOrder = 0
+    Color = xFF46E5E8
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+  end
+  object Information: TWeb2TabButton
+    StaysPressed = True
+    CanFocus = False
+    Font.Size = 14.000000000000000000
+    GroupName = 'group1'
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 30.000000000000000000
+    Position.X = 104.000000000000000000
+    Position.Y = 256.000000000000000000
+    Text = 'Information'
+    Width = 125.000000000000000000
+    TabOrder = 1
+    Color = xFF7FE0F8
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    TabPosition = sdTop
+  end
+  object Contact: TWeb2TabButton
+    StaysPressed = True
+    CanFocus = False
+    Font.Size = 14.000000000000000000
+    GroupName = 'group1'
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 30.000000000000000000
+    Position.X = 232.000000000000000000
+    Position.Y = 256.000000000000000000
+    Text = 'Contact'
+    Width = 125.000000000000000000
+    TabOrder = 2
+    Color = xFF7FE0F8
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    TabPosition = sdTop
+  end
+  object Web2TabButton3: TWeb2TabButton
+    StaysPressed = True
+    CanFocus = False
+    Font.Size = 14.000000000000000000
+    GroupName = 'group1'
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 30.000000000000000000
+    Position.X = 360.000000000000000000
+    Position.Y = 256.000000000000000000
+    Text = 'About'
+    Width = 125.000000000000000000
+    TabOrder = 3
+    Color = xFF7FE0F8
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    TabPosition = sdTop
+  end
+  object Web2Button1: TWeb2Button
+    CanFocus = False
+    Height = 33.000000000000000000
+    Position.X = 168.000000000000000000
+    Position.Y = 80.000000000000000000
+    Text = 'Bravo'
+    Width = 121.000000000000000000
+    TabOrder = 4
+    Color = xFFD946E8
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+  end
+  object Web2Button2: TWeb2Button
+    CanFocus = False
+    Height = 33.000000000000000000
+    Position.X = 296.000000000000000000
+    Position.Y = 80.000000000000000000
+    Text = 'Charlie'
+    Width = 121.000000000000000000
+    TabOrder = 5
+    Color = xFFC6E846
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+  end
+  object Web2Button3: TWeb2Button
+    CanFocus = False
+    Height = 33.000000000000000000
+    Position.X = 424.000000000000000000
+    Position.Y = 80.000000000000000000
+    Text = 'Dog'
+    Width = 121.000000000000000000
+    TabOrder = 6
+    Color = xFFE8CC46
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+  end
+  object Web2Button5: TWeb2Button
+    CanFocus = False
+    Height = 33.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Echo'
+    Width = 121.000000000000000000
+    TabOrder = 7
+    Color = xFF8FA2A2
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+  end
+  object Web2Button6: TWeb2Button
+    CanFocus = False
+    Height = 33.000000000000000000
+    Position.X = 168.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Freddie'
+    Width = 121.000000000000000000
+    TabOrder = 8
+    Color = xFFE84C46
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+  end
+  object Web2Button7: TWeb2Button
+    CanFocus = False
+    Height = 33.000000000000000000
+    Position.X = 424.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Hotel'
+    Width = 121.000000000000000000
+    TabOrder = 9
+    Color = xFFE790B3
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+  end
+  object Web2Button8: TWeb2Button
+    CanFocus = False
+    Height = 33.000000000000000000
+    Position.X = 296.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Golf'
+    Width = 121.000000000000000000
+    TabOrder = 10
+    Color = xFF9098D4
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+  end
+  object Text1: TText
+    Color = xFFF4F4F4
+    Font.Size = 18.000000000000000000
+    Height = 49.000000000000000000
+    Position.X = 192.000000000000000000
+    Position.Y = 16.000000000000000000
+    Text = 'TWeb2Button'
+    Width = 217.000000000000000000
+    object Text2: TText
+      Color = xFFF4F4F4
+      Font.Size = 18.000000000000000000
+      Height = 49.000000000000000000
+      Position.Y = 184.000000000000000000
+      Text = 'TWeb2TabButton'
+      Width = 217.000000000000000000
+    end
+  end
+  object Web2TabButton1: TWeb2TabButton
+    StaysPressed = True
+    CanFocus = False
+    Font.Size = 14.000000000000000000
+    GroupName = 'group2'
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 30.000000000000000000
+    Position.X = 104.000000000000000000
+    Position.Y = 400.000000000000000000
+    Text = 'Information'
+    Width = 125.000000000000000000
+    TabOrder = 13
+    Color = xFF8631D3
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    TabPosition = sdBottom
+  end
+  object Web2TabButton2: TWeb2TabButton
+    StaysPressed = True
+    CanFocus = False
+    Font.Size = 14.000000000000000000
+    GroupName = 'group2'
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 30.000000000000000000
+    Position.X = 232.000000000000000000
+    Position.Y = 400.000000000000000000
+    Text = 'Contact'
+    Width = 125.000000000000000000
+    TabOrder = 14
+    Color = xFF8631D3
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    TabPosition = sdBottom
+  end
+  object Web2TabButton4: TWeb2TabButton
+    StaysPressed = True
+    CanFocus = False
+    Font.Size = 14.000000000000000000
+    GroupName = 'group2'
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 30.000000000000000000
+    Position.X = 360.000000000000000000
+    Position.Y = 400.000000000000000000
+    Text = 'About'
+    Width = 125.000000000000000000
+    TabOrder = 15
+    Color = xFF8631D3
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    TabPosition = sdBottom
+  end
+  object Web2TabButton5: TWeb2TabButton
+    StaysPressed = True
+    CanFocus = False
+    Font.Size = 14.000000000000000000
+    GroupName = 'group1'
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 30.000000000000000000
+    Position.X = 32.000000000000000000
+    Position.Y = 304.000000000000000000
+    Text = 'Information'
+    Width = 125.000000000000000000
+    TabOrder = 16
+    Color = xFFE1EE66
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    TabPosition = sdLeft
+  end
+  object Web2TabButton6: TWeb2TabButton
+    StaysPressed = True
+    CanFocus = False
+    Font.Size = 14.000000000000000000
+    GroupName = 'group1'
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 30.000000000000000000
+    Position.X = 32.000000000000000000
+    Position.Y = 336.000000000000000000
+    Text = 'Information'
+    Width = 125.000000000000000000
+    TabOrder = 17
+    Color = xFFE1EE66
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    TabPosition = sdLeft
+  end
+  object Web2TabButton7: TWeb2TabButton
+    StaysPressed = True
+    CanFocus = False
+    Font.Size = 14.000000000000000000
+    GroupName = 'group1'
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 30.000000000000000000
+    Position.X = 448.000000000000000000
+    Position.Y = 304.000000000000000000
+    Text = 'Information'
+    Width = 125.000000000000000000
+    TabOrder = 18
+    Color = xFFD07D4A
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    TabPosition = sdRight
+  end
+  object Web2TabButton8: TWeb2TabButton
+    StaysPressed = True
+    CanFocus = False
+    Font.Size = 14.000000000000000000
+    GroupName = 'group1'
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 30.000000000000000000
+    Position.X = 448.000000000000000000
+    Position.Y = 336.000000000000000000
+    Text = 'Information'
+    Width = 125.000000000000000000
+    TabOrder = 19
+    Color = xFFD07D4A
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    TabPosition = sdRight
+  end
+end
