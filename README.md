@@ -3,9 +3,15 @@ Graphic Component for FireMonkey
 =======
 
 
+[Screenshot]
+https://raw.github.com/dkstar88/graphix/master/doc/screenshot.png
+
+
+[Components]
 TWeb2ImageButton 
 ----------------
 simple image button with normal, hover, down button image attribute, great if you have designers draw up buttons for you, just load up the images for different button states. 
+
 
 TWeb2Button 
 ----------------
