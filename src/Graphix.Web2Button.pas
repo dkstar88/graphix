@@ -18,6 +18,7 @@ type
     FTextMargin: TBounds;
     FButtonActiveBitmap: TBitmap;
     FHoverActive: Boolean;
+    FTextLift: Boolean;
 
     procedure SetButtonBitmap(const Value: TBitmap);
     procedure SetButtonDownBitmap(const Value: TBitmap);
@@ -27,6 +28,7 @@ type
     procedure TextMarginChange(ASender: TObject);
     procedure SetButtonActiveBitmap(const Value: TBitmap);
     procedure SetHoverActive(const Value: Boolean);
+    procedure SetTextLift(const Value: Boolean);
 
   protected
     FDefault: Boolean;
@@ -69,7 +71,7 @@ type
 
     property HoverActive: Boolean read FHoverActive write SetHoverActive;
     property TextMargin: TBounds read FTextMargin write SetTextMargin;
-
+    property TextLift: Boolean read FTextLift write SetTextLift;
     property StaysPressed default False;
     property Action;
     property Align default TAlignLayout.alNone;
@@ -158,7 +160,6 @@ type
     { Private declarations }
     FUpdateButtonCount: Integer;
     FCancel: Boolean;
-    FText: TText;
     FImage: TImage;
     FButtonBackground: TBitmap;
     FButtonLightOverlay: TBitmap;
@@ -185,6 +186,7 @@ type
     procedure CreateOverEffect; virtual;
     procedure RecreateButtonBackground; virtual;
     procedure RecreateLightOverlay; virtual;
+    procedure UpdateImage; override;
 
     property Sides: TSides read FSides write SetSides;
     property Corners: TCorners read FCorners write SetCorners;
@@ -468,12 +470,14 @@ begin
   CreateButton;
   CreateOverEffect;
   CreateDownEffect;
+
   UpdateImage;
 end;
 
 procedure TWeb2Button.SetColor(const Value: TAlphaColor);
 begin
   FColor := Value;
+
   RecreateButton;
 end;
 
@@ -501,6 +505,18 @@ begin
   RecreateButton;
 end;
 
+
+procedure TWeb2Button.UpdateImage;
+begin
+  inherited;
+  if FText <> nil then
+  begin
+    if FColor.Brightness > 0.5 then
+      FText.Color := TAlphaColorRec.Black
+    else
+      FText.Color := TAlphaColorRec.White;
+  end;
+end;
 
 { TWeb2TabButton }
 
@@ -648,6 +664,7 @@ begin
   FButtonOver := TBitmap.Create;
   FButtonDown := TBitmap.Create;
   FButtonActiveBitmap := TBitmap.Create;
+  FTextLift := False;
 end;
 
 destructor TWeb2BaseButton.Destroy;
@@ -845,6 +862,11 @@ begin
   UpdateImage;
 end;
 
+procedure TWeb2BaseButton.SetTextLift(const Value: Boolean);
+begin
+  FTextLift := Value;
+end;
+
 procedure TWeb2BaseButton.SetTextMargin(const Value: TBounds);
 begin
   FTextMargin.Assign(Value);
@@ -889,7 +911,8 @@ begin
       end;
     end;
 
-    if FText <> nil then
+
+    if FTextLift and (FText <> nil) then
     begin
       FText.Margins.Assign(FTextMargin);
       if IsPressed then

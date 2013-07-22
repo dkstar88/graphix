@@ -35,6 +35,7 @@ requires
 
 contains
   Graphix.Helpers in 'src\Graphix.Helpers.pas',
-  Graphix.Web2Button in 'src\Graphix.Web2Button.pas';
+  Graphix.Web2Button in 'src\Graphix.Web2Button.pas',
+  Graphix.WebLabel in 'src\Graphix.WebLabel.pas';
 
 end.

@@ -5,12 +5,12 @@ interface
 uses System.UITypes, System.Classes, System.Types, System.UIConsts, FMX.Types;
 
 type
+
   TColorHelper = record helper for TAlphaColor
   public
     function Brighten(AValue: Single): TAlphaColor;
     function Darken(AValue: Single): TAlphaColor;
-//    class operator function Add(a, b: TAlphaColor): TAlphaColor;
-//    class operator function Subtract(a, b: TAlphaColor): TAlphaColor;
+    function Brightness: Single;
   end;
 
   TBitmapHelper = class helper for TBitmap
@@ -101,6 +101,14 @@ end;
 function TColorHelper.Brighten(AValue: Single): TAlphaColor;
 begin
   Result := BrightColor(Self, AValue);
+end;
+
+function TColorHelper.Brightness: Single;
+var
+  h, s, l: Single;
+begin
+  RGBtoHSL(Self, h, s, l);
+  Result := l;
 end;
 
 function TColorHelper.Darken(AValue: Single): TAlphaColor;

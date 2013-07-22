@@ -117,6 +117,7 @@
         <DCCReference Include="fmx.dcp"/>
         <DCCReference Include="src\Graphix.Helpers.pas"/>
         <DCCReference Include="src\Graphix.Web2Button.pas"/>
+        <DCCReference Include="src\Graphix.WebLabel.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
