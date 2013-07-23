@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Rtti, System.Classes,
   System.Variants, FMX.Types, FMX.Controls, FMX.Forms, FMX.Dialogs,
-  FMX.StdCtrls, Graphix.Web2Button, FMX.Objects;
+  FMX.StdCtrls, Graphix.Web2Button, FMX.Objects, Graphix.WebLabel;
 
 type
   TForm2 = class(TForm)
@@ -30,6 +30,7 @@ type
     Web2TabButton6: TWeb2TabButton;
     Web2TabButton7: TWeb2TabButton;
     Web2TabButton8: TWeb2TabButton;
+    WebLabel1: TWebLabel;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }

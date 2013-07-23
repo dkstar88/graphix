@@ -23,11 +23,14 @@ object Form2: TForm2
   end
   object Web2Button4: TWeb2Button
     CanFocus = False
+    Cursor = crHandPoint
     Height = 33.000000000000000000
     Position.X = 40.000000000000000000
     Position.Y = 80.000000000000000000
     Text = 'Apple'
     Width = 121.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 0
     Color = xFF46E5E8
     XRadius = 4.000000000000000000
@@ -36,6 +39,7 @@ object Form2: TForm2
   object Information: TWeb2TabButton
     StaysPressed = True
     CanFocus = False
+    Cursor = crHandPoint
     Font.Size = 14.000000000000000000
     GroupName = 'group1'
     StyledSettings = [ssFamily, ssStyle, ssFontColor]
@@ -44,6 +48,8 @@ object Form2: TForm2
     Position.Y = 256.000000000000000000
     Text = 'Information'
     Width = 125.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 1
     Color = xFF7FE0F8
     XRadius = 4.000000000000000000
@@ -53,6 +59,7 @@ object Form2: TForm2
   object Contact: TWeb2TabButton
     StaysPressed = True
     CanFocus = False
+    Cursor = crHandPoint
     Font.Size = 14.000000000000000000
     GroupName = 'group1'
     StyledSettings = [ssFamily, ssStyle, ssFontColor]
@@ -61,6 +68,8 @@ object Form2: TForm2
     Position.Y = 256.000000000000000000
     Text = 'Contact'
     Width = 125.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 2
     Color = xFF7FE0F8
     XRadius = 4.000000000000000000
@@ -70,6 +79,7 @@ object Form2: TForm2
   object Web2TabButton3: TWeb2TabButton
     StaysPressed = True
     CanFocus = False
+    Cursor = crHandPoint
     Font.Size = 14.000000000000000000
     GroupName = 'group1'
     StyledSettings = [ssFamily, ssStyle, ssFontColor]
@@ -78,6 +88,8 @@ object Form2: TForm2
     Position.Y = 256.000000000000000000
     Text = 'About'
     Width = 125.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 3
     Color = xFF7FE0F8
     XRadius = 4.000000000000000000
@@ -86,11 +98,14 @@ object Form2: TForm2
   end
   object Web2Button1: TWeb2Button
     CanFocus = False
+    Cursor = crHandPoint
     Height = 33.000000000000000000
     Position.X = 168.000000000000000000
     Position.Y = 80.000000000000000000
     Text = 'Bravo'
     Width = 121.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 4
     Color = xFFD946E8
     XRadius = 4.000000000000000000
@@ -98,11 +113,14 @@ object Form2: TForm2
   end
   object Web2Button2: TWeb2Button
     CanFocus = False
+    Cursor = crHandPoint
     Height = 33.000000000000000000
     Position.X = 296.000000000000000000
     Position.Y = 80.000000000000000000
     Text = 'Charlie'
     Width = 121.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 5
     Color = xFFC6E846
     XRadius = 4.000000000000000000
@@ -110,11 +128,14 @@ object Form2: TForm2
   end
   object Web2Button3: TWeb2Button
     CanFocus = False
+    Cursor = crHandPoint
     Height = 33.000000000000000000
     Position.X = 424.000000000000000000
     Position.Y = 80.000000000000000000
     Text = 'Dog'
     Width = 121.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 6
     Color = xFFE8CC46
     XRadius = 4.000000000000000000
@@ -122,11 +143,14 @@ object Form2: TForm2
   end
   object Web2Button5: TWeb2Button
     CanFocus = False
+    Cursor = crHandPoint
     Height = 33.000000000000000000
     Position.X = 40.000000000000000000
     Position.Y = 120.000000000000000000
     Text = 'Echo'
     Width = 121.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 7
     Color = xFF8FA2A2
     XRadius = 4.000000000000000000
@@ -134,11 +158,14 @@ object Form2: TForm2
   end
   object Web2Button6: TWeb2Button
     CanFocus = False
+    Cursor = crHandPoint
     Height = 33.000000000000000000
     Position.X = 168.000000000000000000
     Position.Y = 120.000000000000000000
     Text = 'Freddie'
     Width = 121.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 8
     Color = xFFE84C46
     XRadius = 4.000000000000000000
@@ -146,11 +173,14 @@ object Form2: TForm2
   end
   object Web2Button7: TWeb2Button
     CanFocus = False
+    Cursor = crHandPoint
     Height = 33.000000000000000000
     Position.X = 424.000000000000000000
     Position.Y = 120.000000000000000000
     Text = 'Hotel'
     Width = 121.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 9
     Color = xFFE790B3
     XRadius = 4.000000000000000000
@@ -158,11 +188,14 @@ object Form2: TForm2
   end
   object Web2Button8: TWeb2Button
     CanFocus = False
+    Cursor = crHandPoint
     Height = 33.000000000000000000
     Position.X = 296.000000000000000000
     Position.Y = 120.000000000000000000
     Text = 'Golf'
     Width = 121.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 10
     Color = xFF9098D4
     XRadius = 4.000000000000000000
@@ -188,6 +221,7 @@ object Form2: TForm2
   object Web2TabButton1: TWeb2TabButton
     StaysPressed = True
     CanFocus = False
+    Cursor = crHandPoint
     Font.Size = 14.000000000000000000
     GroupName = 'group2'
     StyledSettings = [ssFamily, ssStyle, ssFontColor]
@@ -196,6 +230,8 @@ object Form2: TForm2
     Position.Y = 400.000000000000000000
     Text = 'Information'
     Width = 125.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 13
     Color = xFF8631D3
     XRadius = 4.000000000000000000
@@ -205,6 +241,7 @@ object Form2: TForm2
   object Web2TabButton2: TWeb2TabButton
     StaysPressed = True
     CanFocus = False
+    Cursor = crHandPoint
     Font.Size = 14.000000000000000000
     GroupName = 'group2'
     StyledSettings = [ssFamily, ssStyle, ssFontColor]
@@ -213,6 +250,8 @@ object Form2: TForm2
     Position.Y = 400.000000000000000000
     Text = 'Contact'
     Width = 125.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 14
     Color = xFF8631D3
     XRadius = 4.000000000000000000
@@ -222,6 +261,7 @@ object Form2: TForm2
   object Web2TabButton4: TWeb2TabButton
     StaysPressed = True
     CanFocus = False
+    Cursor = crHandPoint
     Font.Size = 14.000000000000000000
     GroupName = 'group2'
     StyledSettings = [ssFamily, ssStyle, ssFontColor]
@@ -230,6 +270,8 @@ object Form2: TForm2
     Position.Y = 400.000000000000000000
     Text = 'About'
     Width = 125.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 15
     Color = xFF8631D3
     XRadius = 4.000000000000000000
@@ -239,6 +281,7 @@ object Form2: TForm2
   object Web2TabButton5: TWeb2TabButton
     StaysPressed = True
     CanFocus = False
+    Cursor = crHandPoint
     Font.Size = 14.000000000000000000
     GroupName = 'group1'
     StyledSettings = [ssFamily, ssStyle, ssFontColor]
@@ -247,6 +290,8 @@ object Form2: TForm2
     Position.Y = 304.000000000000000000
     Text = 'Information'
     Width = 125.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 16
     Color = xFFE1EE66
     XRadius = 4.000000000000000000
@@ -256,6 +301,7 @@ object Form2: TForm2
   object Web2TabButton6: TWeb2TabButton
     StaysPressed = True
     CanFocus = False
+    Cursor = crHandPoint
     Font.Size = 14.000000000000000000
     GroupName = 'group1'
     StyledSettings = [ssFamily, ssStyle, ssFontColor]
@@ -264,6 +310,8 @@ object Form2: TForm2
     Position.Y = 336.000000000000000000
     Text = 'Information'
     Width = 125.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 17
     Color = xFFE1EE66
     XRadius = 4.000000000000000000
@@ -273,6 +321,7 @@ object Form2: TForm2
   object Web2TabButton7: TWeb2TabButton
     StaysPressed = True
     CanFocus = False
+    Cursor = crHandPoint
     Font.Size = 14.000000000000000000
     GroupName = 'group1'
     StyledSettings = [ssFamily, ssStyle, ssFontColor]
@@ -281,6 +330,8 @@ object Form2: TForm2
     Position.Y = 304.000000000000000000
     Text = 'Information'
     Width = 125.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 18
     Color = xFFD07D4A
     XRadius = 4.000000000000000000
@@ -290,6 +341,7 @@ object Form2: TForm2
   object Web2TabButton8: TWeb2TabButton
     StaysPressed = True
     CanFocus = False
+    Cursor = crHandPoint
     Font.Size = 14.000000000000000000
     GroupName = 'group1'
     StyledSettings = [ssFamily, ssStyle, ssFontColor]
@@ -298,10 +350,34 @@ object Form2: TForm2
     Position.Y = 336.000000000000000000
     Text = 'Information'
     Width = 125.000000000000000000
+    HoverActive = False
+    TextLift = False
     TabOrder = 19
     Color = xFFD07D4A
     XRadius = 4.000000000000000000
     YRadius = 4.000000000000000000
     TabPosition = sdRight
+  end
+  object WebLabel1: TWebLabel
+    Cursor = crHandPoint
+    Color = claWhite
+    Font.Family = 'Segoe UI Semibold'
+    Font.Size = 14.000000000000000000
+    Height = 25.000000000000000000
+    Position.X = 424.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'http://www.pockhero.com'
+    Width = 169.000000000000000000
+    URL = 'http://www.pockhero.com'
+    FontNormal.Font.Family = 'Segoe UI Semibold'
+    FontNormal.Font.Size = 14.000000000000000000
+    FontNormal.FontColor = claWhite
+    FontHover.Font.Size = 13.000000000000000000
+    FontHover.Font.Style = [fsBold, fsUnderline]
+    FontHover.FontColor = xFFFBF972
+    FontDown.Font.Size = 13.000000000000000000
+    FontDown.Font.Style = [fsUnderline]
+    FontDown.FontColor = claWhite
+    FontSettings = [ssFamily, ssStyle, ssFontColor]
   end
 end
