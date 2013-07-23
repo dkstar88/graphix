@@ -1,3 +1,8 @@
+{
+  Author: William Yang
+  Website: http://www.pockhero.com
+
+}
 unit Graphix.Web2Button;
 
 interface

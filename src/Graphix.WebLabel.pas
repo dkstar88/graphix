@@ -1,4 +1,10 @@
-﻿
+﻿{
+  Author: William Yang
+  Website: http://www.pockhero.com
+  Last Update: 2013/07/23
+  A clickable label opens URL in system's Internet browser.
+
+}
 ///	<summary>
 ///	  A clickable label opens URL in system's Internet browser.
 ///	</summary>
@@ -10,7 +16,7 @@ unit Graphix.WebLabel;
 
 interface
 
-uses Classes, System.UIConsts, System.UITypes, FMX.Types, FMX.Controls,
+uses System.Classes, System.UIConsts, System.Types, System.UITypes, FMX.Types, FMX.Controls,
   FMX.Objects;
 
 type
@@ -57,6 +63,7 @@ type
     procedure DoMouseLeave; override;
     procedure MouseDown(Button: TMouseButton; Shift: TShiftState;
       X, Y: Single); override;
+    procedure MouseMove(Shift: TShiftState; X, Y: Single); override;
     procedure MouseUp(Button: TMouseButton; Shift: TShiftState;
       X, Y: Single); override;
   public
@@ -114,7 +121,7 @@ type
     ///	<summary>
     ///	  Font for active effect
     ///	</summary>
-    property FontActive: TFontTextSettings read FFontActive write SetFontActive;
+//    property FontActive: TFontTextSettings read FFontActive write SetFontActive;
 
     ///	<summary>
     ///	  When URLLabel effect changes, what font settings to be applied.
@@ -169,6 +176,8 @@ end;
 constructor TWebLabel.Create(AOwner: TComponent);
 begin
   inherited;
+  AutoCapture := True;
+  CanFocus := True;
   Cursor := crHandpoint;
   FAutoOpen := True;
   FFontNormal := TFontTextSettings.Create(Self);
@@ -237,12 +246,24 @@ begin
   UpdateFont;
 end;
 
+procedure TWebLabel.MouseMove(Shift: TShiftState; X, Y: Single);
+begin
+  inherited;
+  if (ssLeft in Shift) and IsPressed then
+  begin
+    IsPressed := LocalRect.Contains(PointF(X, Y));
+  end;
+end;
+
 procedure TWebLabel.MouseUp(Button: TMouseButton; Shift: TShiftState;
   X, Y: Single);
 begin
   inherited;
-  FIsPressed := False;
-  UpdateFont;
+  if Button = TMouseButton.mbLeft then
+  begin
+    FIsPressed := False;
+    UpdateFont;
+  end;
 end;
 
 procedure TWebLabel.SetColor(const Value: TAlphaColor);
